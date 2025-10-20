@@ -16,7 +16,7 @@ export class HangmanImage {
       this.element.src = '';
     } else {
       const imageNumber = Math.min(incorrectGuesses, this.maxImages);
-      this.element.src = `/images/ahorcado${imageNumber}.png`;
+      this.element.src = `./images/ahorcado${imageNumber}.png`;
       this.element.style.opacity = '1';
       this.element.alt = `Ahorcado - ${imageNumber} errores`;
     }
